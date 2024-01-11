@@ -1,4 +1,4 @@
-fun erick(){
+fun elon(){
      println("This is a customised user defined function")
 
 }
@@ -10,7 +10,7 @@ fun Hesabu(){
 }
 
 fun main(args: Array<String>) {
-    erick()
+    elon()
     Hesabu()
 
 }
