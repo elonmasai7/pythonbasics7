@@ -1,0 +1,51 @@
+import java.util.*
+
+// 1. Output a greeting message using println.
+
+println("Hello, world!")
+
+// 2. Read an integer from the user and store it in a variable.
+
+print("Enter an integer: ")
+val number = readLine()!!.toInt()
+
+// 3. Check if the number is even or odd.
+
+val isEven = number % 2 == 0
+println("The number $number is ${if (isEven) "even" else "odd"}.")
+
+// 4. Create a list of strings and add some elements to it.
+
+val fruits = ArrayList<String>()
+fruits.add("Apple")
+fruits.add("Banana")
+fruits.add("Orange")
+
+// 5. Iterate over the list and print each element.
+
+for (fruit in fruits) {
+    println(fruit)
+}
+
+// 6. Create a map of strings to strings and add some elements to it.
+
+val capitals = HashMap<String, String>()
+capitals["USA"] = "Washington D.C."
+capitals["UK"] = "London"
+capitals["France"] = "Paris"
+
+// 7. Iterate over the map and print each key-value pair.
+
+for ((country, capital) in capitals) {
+    println("$country: $capital")
+}
+
+// 8. Create a function that takes an integer as a parameter and returns its factorial.
+
+fun factorial(number: Int): Int {
+    var result = 1
+    for (i in 1..number) {
+        result *= i
+    }
+    return result
+}
